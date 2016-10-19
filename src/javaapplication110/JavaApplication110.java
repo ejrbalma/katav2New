@@ -13,9 +13,9 @@ public class JavaApplication110 {
         // Double [] vector = {1.3, 3.3, 1.3, 4.4, 5.5, 3.3, 1.1, 1.3, 7.1, 8.2, 7.1};
          String [] vector = {"Ana", "Elena", "Yaiza","Elena", "Yaiza","Elena", "Ana","Ana","Yaiza","Elena"};        
 
-         Histogram<Object> histogram = CalculateHistogram.computeHistogram(vector);
+         Histogram<String> histogram = CalculateHistogram.computeHistogram(vector);
     
-        for (Object key : histogram.keySet()) {
+        for (String key : histogram.keySet()) {
             System.out.println(key+ " --> "+ histogram.get(key));    
         }
         
